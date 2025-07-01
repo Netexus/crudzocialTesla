@@ -1,0 +1,104 @@
+/* General Styles */
+:root {
+  --primary-color: #209cee;
+  --secondary-color: #3273dc;
+  --success-color: #23d160;
+  --warning-color: #ffdd57;
+  --danger-color: #ff3860;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+}
+
+/* Cards */
+.card {
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.button {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Forms */
+.field {
+  margin-bottom: 1rem;
+}
+
+/* Activity Log */
+.activity-log {
+  max-height: 400px;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+.activity-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.activity-item:last-child {
+  border-bottom: none;
+}
+.activity-time {
+  font-size: 0.8em;
+  color: #666;
+}
+.user-activity {
+  margin-left: 20px;
+}
+.user-activity:first-child {
+  margin-left: 0;
+}
+
+/* Image Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+.image-card {
+  position: relative;
+}
+.image-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.image-actions {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+}
+.image-card:hover .image-actions {
+  display: block;
+}
+.image-actions button {
+  margin-left: 5px;
+}
+
+/* Drop Zone */
+.drop-zone {
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  transition: border-color 0.3s;
+}
+.drop-zone.dragover {
+  border-color: var(--primary-color);
+}
+
+/* Navigation */
+.navbar-menu {
+  border-top: 1px solid #e8e8e8;
+}
+
+/* Hero Section */
+.hero.is-medium .hero-body {
+  padding: 4rem 1.5rem 2rem;
+}
